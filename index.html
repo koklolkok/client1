@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO & Indexing -->
+    <title>Fate AI | Predictive Intelligence & Future Modeling</title>
+    <meta name="description" content="Decipher the future with Fate AI. Harnessing advanced predictive algorithms and neural networks to model global outcomes.">
+    <meta name="keywords" content="Fate AI, Predictive AI, Future Modeling, AI Oracle, Machine Learning Korea">
+    <link rel="canonical" href="https://www.fate.ai.kr/">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.fate.ai.kr/">
+    <meta property="og:title" content="Fate AI | The Future, Computed.">
+    <meta property="og:description" content="Explore the intersection of destiny and data. Fate AI provides next-generation predictive insights.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1639322537228-f710d846310a?auto=format&fit=crop&w=1200&h=630&q=80">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://www.fate.ai.kr/">
+    <meta property="twitter:title" content="Fate AI | Computed Destiny">
+    <meta property="twitter:image" content="https://images.unsplash.com/photo-1639322537228-f710d846310a?auto=format&fit=crop&w=1200&h=630&q=80">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@200;400;700&family=Syne:wght@700;800&display=swap');
+        
+        :root {
+            --accent: #bc13fe;
+            --bg: #0a0014;
+        }
+
+        body {
+            font-family: 'Outfit', sans-serif;
+            background-color: var(--bg);
+            color: #ffffff;
+            overflow-x: hidden;
+        }
+
+        .syne { font-family: 'Syne', sans-serif; }
+
+        .orb {
+            position: absolute;
+            width: 500px;
+            height: 500px;
+            background: radial-gradient(circle, rgba(188, 19, 254, 0.15) 0%, rgba(0, 0, 0, 0) 70%);
+            border-radius: 50%;
+            filter: blur(60px);
+            z-index: -1;
+            animation: float 20s infinite alternate;
+        }
+
+        @keyframes float {
+            0% { transform: translate(-10%, -10%); }
+            100% { transform: translate(20%, 20%); }
+        }
+
+        .glass {
+            background: rgba(255, 255, 255, 0.02);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .fate-button {
+            position: relative;
+            overflow: hidden;
+            transition: all 0.4s ease;
+        }
+
+        .fate-button::before {
+            content: '';
+            position: absolute;
+            top: 0; left: -100%;
+            width: 100%; height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(188, 19, 254, 0.4), transparent);
+            transition: 0.5s;
+        }
+
+        .fate-button:hover::before {
+            left: 100%;
+        }
+
+        .scanline {
+            width: 100%;
+            height: 2px;
+            background: rgba(188, 19, 254, 0.1);
+            position: fixed;
+            z-index: 100;
+            pointer-events: none;
+            animation: scan 8s linear infinite;
+        }
+
+        @keyframes scan {
+            0% { top: -10%; }
+            100% { top: 110%; }
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col">
+
+    <div class="scanline"></div>
+    <div class="orb" style="top: -100px; left: -100px;"></div>
+    <div class="orb" style="bottom: -100px; right: -100px; animation-delay: -5s;"></div>
+
+    <!-- Navigation -->
+    <nav class="p-8 flex justify-between items-center">
+        <div class="syne text-2xl font-extrabold tracking-tighter flex items-center gap-2">
+            <div class="w-2 h-2 bg-[#bc13fe] rounded-full animate-ping"></div>
+            FATE.AI
+        </div>
+        <div class="space-x-8 text-xs uppercase tracking-widest font-light opacity-60 hover:opacity-100 transition">
+            <a href="#vision" class="hover:text-[#bc13fe]">Vision</a>
+            <a href="#nodes" class="hover:text-[#bc13fe]">Nodes</a>
+            <a href="#access" class="hover:text-[#bc13fe]">Access</a>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="flex-grow flex flex-col items-center justify-center px-6 py-20">
+        <div class="text-center max-w-4xl">
+            <span class="inline-block px-4 py-1 rounded-full border border-[#bc13fe]/30 text-[#bc13fe] text-[10px] uppercase tracking-[0.3em] mb-8 bg-[#bc13fe]/5">
+                Neural Destiny Mapping Active
+            </span>
+            <h1 class="syne text-6xl md:text-9xl font-extrabold mb-8 leading-none tracking-tighter">
+                YOUR FUTURE <br> <span class="text-transparent" style="-webkit-text-stroke: 1px rgba(255,255,255,0.3);">UNFOLDED.</span>
+            </h1>
+            <p class="text-lg md:text-xl font-light opacity-50 max-w-2xl mx-auto mb-12 leading-relaxed">
+                Fate AI bridges the gap between probability and reality. Using high-dimensional tensor processing to predict the unpredictable.
+            </p>
+            
+            <div class="flex flex-col sm:flex-row gap-6 justify-center">
+                <button class="fate-button bg-[#bc13fe] text-white px-10 py-5 rounded-none syne text-sm font-bold uppercase tracking-widest shadow-[0_0_30px_rgba(188,19,254,0.4)]">
+                    Begin Projection
+                </button>
+                <button class="glass text-white px-10 py-5 rounded-none syne text-sm font-bold uppercase tracking-widest hover:bg-white/5 transition">
+                    View Network
+                </button>
+            </div>
+        </div>
+
+        <!-- Dynamic Data Feed -->
+        <div class="mt-32 w-full max-w-6xl grid grid-cols-1 md:grid-cols-3 gap-1 px-4">
+            <div class="glass p-8 group cursor-crosshair">
+                <div class="text-[10px] text-[#bc13fe] mb-4">01 // QUANTUM PROBABILITY</div>
+                <h3 class="syne text-xl mb-2">Outcome Simulation</h3>
+                <p class="text-sm opacity-40 font-light group-hover:opacity-80 transition">Running 4.2 billion parallel destiny threads per microsecond.</p>
+            </div>
+            <div class="glass p-8 group cursor-crosshair">
+                <div class="text-[10px] text-[#bc13fe] mb-4">02 // NEURAL SYNCHRONY</div>
+                <h3 class="syne text-xl mb-2">Global Signal Processing</h3>
+                <p class="text-sm opacity-40 font-light group-hover:opacity-80 transition">Detecting anomalies in the collective digital consciousness.</p>
+            </div>
+            <div class="glass p-8 group cursor-crosshair">
+                <div class="text-[10px] text-[#bc13fe] mb-4">03 // TEMPORAL ANALYSIS</div>
+                <h3 class="syne text-xl mb-2">Predictive Logic</h3>
+                <p class="text-sm opacity-40 font-light group-hover:opacity-80 transition">Mapping the path of least resistance for market and social shifts.</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="p-12 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6">
+        <div class="text-[10px] opacity-30 tracking-[0.2em] uppercase">
+            &copy; 2024 FATE AI KOREA // BEYOND DETERMINISM
+        </div>
+        <div class="flex gap-8 text-[10px] opacity-30 tracking-[0.2em] uppercase">
+            <a href="#" class="hover:opacity-100">Privacy Node</a>
+            <a href="#" class="hover:opacity-100">System Status</a>
+            <a href="#" class="hover:opacity-100">Terminal</a>
+        </div>
+        <div class="text-[10px] text-[#bc13fe]">
+            WWW.FATE.AI.KR
+        </div>
+    </footer>
+
+    <script>
+        // Subtle Mouse Interaction for the Orbs
+        document.addEventListener('mousemove', (e) => {
+            const orbs = document.querySelectorAll('.orb');
+            const x = e.clientX / window.innerWidth;
+            const y = e.clientY / window.innerHeight;
+            
+            orbs.forEach((orb, index) => {
+                const speed = (index + 1) * 20;
+                orb.style.transform = `translate(${x * speed}px, ${y * speed}px)`;
+            });
+        });
+    </script>
+</body>
+</html>
